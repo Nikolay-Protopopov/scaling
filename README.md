@@ -72,16 +72,23 @@ https://www.exploit-db.com/exploits/30020
 Чем отличаются эти режимы сканирования с точки зрения сетевого трафика?
 Как отвечает сервер?
 Приведите ответ в свободной форме.
+
 TARGET="ip Metasploitable"
-Запускаем Wireshark с сохранением в файл
+Запускаем Wireshark с сохранением в файл.
 В интерфейсе программы в строке задал параметр ip.addr== при запуске отслеживания он спрашивает нужно ли сохранять и куда. 
+
 ![Task1](screenshots/4.png)
 ![Task1](screenshots/3.png)
 Далее в терминале вводил комманды.
+
 sudo nmap -sS -p 1-1000 $TARGET -oN syn_scan.txt
+
 sudo nmap -sF -p 1-1000 $TARGET -oN fin_scan.txt
+
 sudo nmap -sX -p 1-1000 $TARGET -oN xmas_scan.txt
+
 sudo nmap -sU -p 1-1000 $TARGET -oN udp_scan.txt
+
 
 Ответы на вопросы
 Вопрос 1: Чем отличаются эти режимы сканирования с точки зрения сетевого трафика?
