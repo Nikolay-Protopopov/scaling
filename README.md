@@ -84,8 +84,10 @@ Client → Master A ↔ Master B ← Client
 Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
 Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.
-Master
+
+### Master
 ![Task1](screenshots/master.png)
-Slave
+
+### Slave
 ![Task1](screenshots/slave.png)
 
